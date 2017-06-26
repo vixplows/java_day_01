@@ -6,12 +6,17 @@ public class BusTest {
 
   @Before
   public void before() {
-    bus = new Bus("Big Red");
+    bus = new Bus("Big Red", 11);
   }
 
   @Test
   public void hasName() {
    assertEquals("Big Red", bus.getName());
+  }
+
+  @Test
+  public void hasNumber() {
+    assertEquals(11, bus.getNumber());
   }
 
 }
