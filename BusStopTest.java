@@ -27,9 +27,10 @@ public class BusStopTest {
     assertEquals(6, busStop.queueCount());
   }
 
-  // @Test
-  // public void canRemovePersonFromQueue() {
-  //   busStop.removePerson();
-  //   assertEquals(5, busStop.queueCount());
-  // }
+  @Test
+  public void canRemovePersonFromQueue() {
+    busStop.setQueueLength(6);
+    busStop.removePerson();
+    assertEquals(5, busStop.queueCount());
+  }
 }

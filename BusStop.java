@@ -30,8 +30,8 @@ public class BusStop {
 
   public void removePerson() {
     int queueCount = queueCount();
-    Person person = queue[queueCount];
-    queue[queueCount] = null;
+    Person person = queue[queueCount - 1];
+    queue[queueCount - 1] = null;
   }
 
 }
