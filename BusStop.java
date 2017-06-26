@@ -39,13 +39,12 @@ public class BusStop {
       queue[i] = null;
     }
   }
+
+  public void fillBusEmptyBusStop(Bus bus) {
+    int queueCount = queueCount();
+    bus.addManyPersons(queueCount);
+    emptyQueue();
+    }
+    // need to be able to add multiple person to bus
+    // need to be able to empty the busStop
 }
-  // public void emptyBusStopAndFillBus(Bus bus) {
-  //   for (Person person : queue()){
-  //     bus.addPerson();
-  //   }
-  //   // need to be able to add multiple person to bus
-  //   // need to be able to empty the busStop
-  //   // do add multiple people to bus = to the number in the busstop wueue
-  //   // then remove all people from the busStop queque
-  // }
