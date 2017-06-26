@@ -18,7 +18,7 @@ public class Bus {
     return this.number;
   }
 
-  public int passengerCount(){
+  public int passengerCount() {
     int count = 0;
     for(Person person : passengers) {
       if(person != null) {
@@ -26,6 +26,11 @@ public class Bus {
       }
     }
       return count;
+  }
+
+  public void addPerson(Person person) {
+    int passengerCount = passengerCount();
+    passengers[passengerCount] = person;
   }
 
 }
