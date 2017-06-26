@@ -40,4 +40,10 @@ public class BusTest {
     assertEquals(true, bus.isBusFull());
   }
 
+  @Test
+  public void canAddManyPersons() {
+    bus.addManyPersons(10);
+    assertEquals(10, bus.passengerCount());
+  }
+
 }

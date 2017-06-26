@@ -38,4 +38,10 @@ public class Bus {
     return passengerCount() >= passengers.length;
   }
 
+  public void addManyPersons(int numberOfPersons) {
+    for(int i = 0; i < numberOfPersons; i++) {
+      this.passengers[i] = new Person();
+    }
+  }
+
 }
