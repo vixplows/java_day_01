@@ -33,4 +33,8 @@ public class Bus {
     passengers[passengerCount] = person;
   }
 
+  public boolean isBusFull() {
+    return passengerCount() >= passengers.length;
+  }
+
 }
