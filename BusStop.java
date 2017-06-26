@@ -40,11 +40,11 @@ public class BusStop {
     }
   }
 
+//TODO HOW TO ACTUALLY TAKE FROM BUSTOP QUEUE AND ADD TO THE BUS RATHER THAN SIMPLY ADDING THE NUMBER OF PERSONS IN THE QUEUE ARRAY TO PASSENGERS ARRAY?
   public void fillBusEmptyBusStop(Bus bus) {
     int queueCount = queueCount();
     bus.addManyPersons(queueCount);
     emptyQueue();
     }
-    // need to be able to add multiple person to bus
-    // need to be able to empty the busStop
+  
 }

@@ -44,10 +44,6 @@ public class BusStopTest {
     assertEquals(0, busStop.queueCount());
   }
 
-  // busStop takes a bus
-  // fills it with passengers from the queue
-  // test busStop has no people
-  // and bus now has number of people busStop had
   @Test
   public void canFillBusWithPersonsFromBusStopQueue() {
     busStop.setQueueLength(6);
