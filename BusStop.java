@@ -34,4 +34,18 @@ public class BusStop {
     queue[queueCount - 1] = null;
   }
 
+  public void emptyQueue() {
+    for(int i = 0; i < queue.length; i++) {
+      queue[i] = null;
+    }
+  }
 }
+  // public void emptyBusStopAndFillBus(Bus bus) {
+  //   for (Person person : queue()){
+  //     bus.addPerson();
+  //   }
+  //   // need to be able to add multiple person to bus
+  //   // need to be able to empty the busStop
+  //   // do add multiple people to bus = to the number in the busstop wueue
+  //   // then remove all people from the busStop queque
+  // }
