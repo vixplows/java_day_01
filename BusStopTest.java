@@ -13,4 +13,9 @@ public class BusStopTest {
   public void hasName() {
     assertEquals("Easter Road", busStop.getName());
   }
+
+  @Test
+  public void busStopStartsEmpty() {
+    assertEquals(0, busStop.queueCount());
+  }
 }
