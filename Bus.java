@@ -2,10 +2,12 @@ public class Bus {
 
   private String name;
   private int number;
+  private Person[] passengers;
 
   public Bus(String name, int number) {
     this.name = name;
     this.number = number;
+    this.passengers = new Person[25];
   }
 
   public String getName() {
@@ -15,4 +17,15 @@ public class Bus {
   public int getNumber() {
     return this.number;
   }
+
+  public int passengerCount(){
+    int count = 0;
+    for(Person person : passengers) {
+      if(person != null) {
+        count++;
+      }
+    }
+      return count;
+  }
+
 }
