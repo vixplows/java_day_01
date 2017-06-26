@@ -12,6 +12,12 @@ public class BusStop {
     return this.name;
   }
 
+  public void setQueueLength(int queueLength) {
+    for(int i = 0; i < queueLength; i++) {
+      this.queue[i] = new Person();
+    }
+  }
+
   public int queueCount() {
     int count = 0;
     for(Person person : queue) {
@@ -20,6 +26,12 @@ public class BusStop {
       }
     }
     return count;
+  }
+
+  public void removePerson() {
+    int queueCount = queueCount();
+    Person person = queue[queueCount];
+    queue[queueCount] = null;
   }
 
 }

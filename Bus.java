@@ -25,10 +25,11 @@ public class Bus {
         count++;
       }
     }
-      return count;
+    return count;
   }
 
   public void addPerson(Person person) {
+    if(isBusFull()) return;
     int passengerCount = passengerCount();
     passengers[passengerCount] = person;
   }

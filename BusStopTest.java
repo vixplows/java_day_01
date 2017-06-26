@@ -3,10 +3,12 @@ import org.junit.*;
 
 public class BusStopTest {
   BusStop busStop;
+  Person person;
 
   @Before
   public void before() {
     busStop = new BusStop("Easter Road");
+    person = new Person();
   }
 
   @Test
@@ -18,4 +20,16 @@ public class BusStopTest {
   public void busStopStartsEmpty() {
     assertEquals(0, busStop.queueCount());
   }
+
+  @Test
+  public void canSetQueueLength() {
+    busStop.setQueueLength(6);
+    assertEquals(6, busStop.queueCount());
+  }
+
+  // @Test
+  // public void canRemovePersonFromQueue() {
+  //   busStop.removePerson();
+  //   assertEquals(5, busStop.queueCount());
+  // }
 }
